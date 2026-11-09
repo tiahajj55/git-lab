@@ -15,7 +15,6 @@ def load_flows(path):
         for row in csv.DictReader(f):
             row["attack_prob"] = float(row["attack_prob"])
             flows.append(row)
-    print("DEBUG: loaded", len(flows), "flows, first rows:", flows[:2])
     return flows
 
 
